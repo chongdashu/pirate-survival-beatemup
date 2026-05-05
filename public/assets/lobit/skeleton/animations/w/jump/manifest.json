@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "action": "jump",
+  "direction": "w",
+  "mode": "image",
+  "spritesheet": "spritesheet.png",
+  "previewGif": "preview.gif",
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "columns": 5,
+  "rows": 2,
+  "frames": 6,
+  "fps": 8,
+  "anchor": {
+    "x": 128,
+    "y": 255
+  },
+  "sourceRun": "20260505-1416-lowbit-enemy-skeleton-jump-w-hires",
+  "runtimeFinalization": {
+    "anchorPolicy": "preserve-motion",
+    "requestedAnchorPolicy": "auto",
+    "targetBottomY": 255,
+    "targetCenterX": 128,
+    "framesAdjusted": 0,
+    "report": "finalize-runtime.json"
+  }
+}

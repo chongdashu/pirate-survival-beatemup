@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "action": "walk",
+  "direction": "w",
+  "mode": "video",
+  "spritesheet": "spritesheet.png",
+  "previewGif": "preview.gif",
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "columns": 5,
+  "rows": 2,
+  "frames": 7,
+  "fps": 10,
+  "anchor": {
+    "x": 128,
+    "y": 255
+  },
+  "sourceRun": "runs/20260505-140640-lowbit-enemy-skeleton-walk-w-wan/frame-picker/20260505-181100/post-selection/preserve-canvas-pixel-snap-greenfix",
+  "postSelection": {
+    "layoutMode": "preserve-canvas",
+    "pixelSnap": true,
+    "preserveCanvasResample": "NEAREST",
+    "runtimeGreenCleanup": true
+  },
+  "runtimeFinalization": {
+    "anchorPolicy": "grounded",
+    "requestedAnchorPolicy": "auto",
+    "targetBottomY": 255,
+    "targetCenterX": 128,
+    "framesAdjusted": 7,
+    "report": "finalize-runtime.json"
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "kind": "runtime-finalization",
+  "createdAt": "2026-05-05T20:51:00+01:00",
+  "animationDir": "public/assets/characters/lobit/pirate/animations/w/death",
+  "action": "death",
+  "direction": "w",
+  "requestedAnchorPolicy": "auto",
+  "anchorPolicy": "grounded",
+  "targetBottomY": 255,
+  "targetCenterX": 128,
+  "cellSize": [
+    256,
+    256
+  ],
+  "columns": 5,
+  "frames": 10,
+  "fps": 8,
+  "framesAdjusted": 0,
+  "maxAbsDx": 0,
+  "maxAbsDy": 0,
+  "records": [
+    {
+      "frame": "frame-01.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        60,
+        51,
+        196,
+        256
+      ],
+      "outputBBox": [
+        60,
+        51,
+        196,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-02.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        43,
+        69,
+        214,
+        256
+      ],
+      "outputBBox": [
+        43,
+        69,
+        214,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-03.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        67,
+        67,
+        190,
+        256
+      ],
+      "outputBBox": [
+        67,
+        67,
+        190,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-04.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        36,
+        108,
+        220,
+        256
+      ],
+      "outputBBox": [
+        36,
+        108,
+        220,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-05.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        32,
+        128,
+        224,
+        256
+      ],
+      "outputBBox": [
+        32,
+        128,
+        224,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-06.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        26,
+        174,
+        231,
+        256
+      ],
+      "outputBBox": [
+        26,
+        174,
+        231,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-07.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        18,
+        182,
+        238,
+        256
+      ],
+      "outputBBox": [
+        18,
+        182,
+        238,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-08.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        18,
+        182,
+        238,
+        256
+      ],
+      "outputBBox": [
+        18,
+        182,
+        238,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-09.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        23,
+        179,
+        233,
+        256
+      ],
+      "outputBBox": [
+        23,
+        179,
+        233,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-10.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        21,
+        179,
+        236,
+        256
+      ],
+      "outputBBox": [
+        21,
+        179,
+        236,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    }
+  ]
+}

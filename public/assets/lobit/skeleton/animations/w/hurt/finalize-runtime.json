@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "kind": "runtime-finalization",
+  "createdAt": "2026-05-05T20:51:00+01:00",
+  "animationDir": "public/assets/characters/lobit/skeleton/animations/w/hurt",
+  "action": "hurt",
+  "direction": "w",
+  "requestedAnchorPolicy": "auto",
+  "anchorPolicy": "grounded",
+  "targetBottomY": 255,
+  "targetCenterX": 128,
+  "cellSize": [
+    256,
+    256
+  ],
+  "columns": 5,
+  "frames": 6,
+  "fps": 8,
+  "framesAdjusted": 0,
+  "maxAbsDx": 0,
+  "maxAbsDy": 0,
+  "records": [
+    {
+      "frame": "frame-01.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        86,
+        48,
+        170,
+        256
+      ],
+      "outputBBox": [
+        86,
+        48,
+        170,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-02.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        69,
+        46,
+        188,
+        256
+      ],
+      "outputBBox": [
+        69,
+        46,
+        188,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-03.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        78,
+        62,
+        179,
+        256
+      ],
+      "outputBBox": [
+        78,
+        62,
+        179,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-04.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        72,
+        95,
+        185,
+        256
+      ],
+      "outputBBox": [
+        72,
+        95,
+        185,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-05.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        85,
+        65,
+        171,
+        256
+      ],
+      "outputBBox": [
+        85,
+        65,
+        171,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-06.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        85,
+        46,
+        171,
+        256
+      ],
+      "outputBBox": [
+        85,
+        46,
+        171,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    }
+  ]
+}

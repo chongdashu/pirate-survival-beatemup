@@ -1,0 +1,186 @@
+{
+  "version": 1,
+  "kind": "runtime-finalization",
+  "createdAt": "2026-05-05T20:51:00+01:00",
+  "animationDir": "public/assets/characters/lobit/pirate/animations/w/walk",
+  "action": "walk",
+  "direction": "w",
+  "requestedAnchorPolicy": "auto",
+  "anchorPolicy": "grounded",
+  "targetBottomY": 255,
+  "targetCenterX": 128,
+  "cellSize": [
+    256,
+    256
+  ],
+  "columns": 5,
+  "frames": 9,
+  "fps": 10,
+  "framesAdjusted": 9,
+  "maxAbsDx": 0,
+  "maxAbsDy": 33,
+  "records": [
+    {
+      "frame": "frame-01.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        77,
+        26,
+        206,
+        228
+      ],
+      "outputBBox": [
+        77,
+        54,
+        206,
+        256
+      ],
+      "dx": 0,
+      "dy": 28
+    },
+    {
+      "frame": "frame-02.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        86,
+        25,
+        209,
+        231
+      ],
+      "outputBBox": [
+        86,
+        50,
+        209,
+        256
+      ],
+      "dx": 0,
+      "dy": 25
+    },
+    {
+      "frame": "frame-03.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        80,
+        30,
+        205,
+        231
+      ],
+      "outputBBox": [
+        80,
+        55,
+        205,
+        256
+      ],
+      "dx": 0,
+      "dy": 25
+    },
+    {
+      "frame": "frame-04.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        77,
+        28,
+        202,
+        228
+      ],
+      "outputBBox": [
+        77,
+        56,
+        202,
+        256
+      ],
+      "dx": 0,
+      "dy": 28
+    },
+    {
+      "frame": "frame-05.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        68,
+        26,
+        198,
+        223
+      ],
+      "outputBBox": [
+        68,
+        59,
+        198,
+        256
+      ],
+      "dx": 0,
+      "dy": 33
+    },
+    {
+      "frame": "frame-06.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        54,
+        25,
+        191,
+        224
+      ],
+      "outputBBox": [
+        54,
+        57,
+        191,
+        256
+      ],
+      "dx": 0,
+      "dy": 32
+    },
+    {
+      "frame": "frame-07.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        56,
+        28,
+        187,
+        226
+      ],
+      "outputBBox": [
+        56,
+        58,
+        187,
+        256
+      ],
+      "dx": 0,
+      "dy": 30
+    },
+    {
+      "frame": "frame-08.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        59,
+        30,
+        194,
+        228
+      ],
+      "outputBBox": [
+        59,
+        58,
+        194,
+        256
+      ],
+      "dx": 0,
+      "dy": 28
+    },
+    {
+      "frame": "frame-09.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        69,
+        27,
+        199,
+        229
+      ],
+      "outputBBox": [
+        69,
+        54,
+        199,
+        256
+      ],
+      "dx": 0,
+      "dy": 27
+    }
+  ]
+}

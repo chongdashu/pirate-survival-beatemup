@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "kind": "runtime-finalization",
+  "createdAt": "2026-05-05T20:51:00+01:00",
+  "animationDir": "public/assets/characters/lobit/skeleton/animations/w/jump",
+  "action": "jump",
+  "direction": "w",
+  "requestedAnchorPolicy": "auto",
+  "anchorPolicy": "preserve-motion",
+  "targetBottomY": 255,
+  "targetCenterX": 128,
+  "cellSize": [
+    256,
+    256
+  ],
+  "columns": 5,
+  "frames": 6,
+  "fps": 8,
+  "framesAdjusted": 0,
+  "maxAbsDx": 0,
+  "maxAbsDy": 0,
+  "records": [
+    {
+      "frame": "frame-01.png",
+      "policy": "preserve-motion",
+      "sourceBBox": [
+        79,
+        46,
+        178,
+        256
+      ],
+      "outputBBox": [
+        79,
+        46,
+        178,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-02.png",
+      "policy": "preserve-motion",
+      "sourceBBox": [
+        72,
+        107,
+        185,
+        256
+      ],
+      "outputBBox": [
+        72,
+        107,
+        185,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-03.png",
+      "policy": "preserve-motion",
+      "sourceBBox": [
+        79,
+        46,
+        178,
+        256
+      ],
+      "outputBBox": [
+        79,
+        46,
+        178,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-04.png",
+      "policy": "preserve-motion",
+      "sourceBBox": [
+        77,
+        80,
+        179,
+        256
+      ],
+      "outputBBox": [
+        77,
+        80,
+        179,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-05.png",
+      "policy": "preserve-motion",
+      "sourceBBox": [
+        74,
+        60,
+        182,
+        256
+      ],
+      "outputBBox": [
+        74,
+        60,
+        182,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-06.png",
+      "policy": "preserve-motion",
+      "sourceBBox": [
+        75,
+        105,
+        181,
+        256
+      ],
+      "outputBBox": [
+        75,
+        105,
+        181,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    }
+  ]
+}

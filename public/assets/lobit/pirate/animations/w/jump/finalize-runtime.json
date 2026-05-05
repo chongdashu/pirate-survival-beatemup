@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "kind": "runtime-finalization",
+  "createdAt": "2026-05-05T20:51:00+01:00",
+  "animationDir": "public/assets/characters/lobit/pirate/animations/w/jump",
+  "action": "jump",
+  "direction": "w",
+  "requestedAnchorPolicy": "auto",
+  "anchorPolicy": "preserve-motion",
+  "targetBottomY": 255,
+  "targetCenterX": 128,
+  "cellSize": [
+    256,
+    256
+  ],
+  "columns": 5,
+  "frames": 6,
+  "fps": 8,
+  "framesAdjusted": 0,
+  "maxAbsDx": 0,
+  "maxAbsDy": 0,
+  "records": [
+    {
+      "frame": "frame-01.png",
+      "policy": "preserve-motion",
+      "sourceBBox": [
+        59,
+        46,
+        198,
+        256
+      ],
+      "outputBBox": [
+        59,
+        46,
+        198,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-02.png",
+      "policy": "preserve-motion",
+      "sourceBBox": [
+        64,
+        85,
+        193,
+        256
+      ],
+      "outputBBox": [
+        64,
+        85,
+        193,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-03.png",
+      "policy": "preserve-motion",
+      "sourceBBox": [
+        63,
+        70,
+        194,
+        256
+      ],
+      "outputBBox": [
+        63,
+        70,
+        194,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-04.png",
+      "policy": "preserve-motion",
+      "sourceBBox": [
+        65,
+        59,
+        191,
+        256
+      ],
+      "outputBBox": [
+        65,
+        59,
+        191,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-05.png",
+      "policy": "preserve-motion",
+      "sourceBBox": [
+        63,
+        70,
+        194,
+        256
+      ],
+      "outputBBox": [
+        63,
+        70,
+        194,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-06.png",
+      "policy": "preserve-motion",
+      "sourceBBox": [
+        61,
+        91,
+        195,
+        256
+      ],
+      "outputBBox": [
+        61,
+        91,
+        195,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    }
+  ]
+}

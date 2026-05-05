@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "action": "attack",
+  "direction": "w",
+  "mode": "image",
+  "spritesheet": "spritesheet.png",
+  "previewGif": "preview.gif",
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "columns": 5,
+  "rows": 2,
+  "frames": 8,
+  "fps": 10,
+  "anchor": {
+    "x": 128,
+    "y": 255
+  },
+  "sourceRun": "runs/20260505-102716-lowbit-male-pirate-w-actions-hires/attack-w/frame-aligner/20260505-210057",
+  "runtimeFinalization": {
+    "anchorPolicy": "grounded",
+    "requestedAnchorPolicy": "auto",
+    "targetBottomY": 255,
+    "targetCenterX": 128,
+    "framesAdjusted": 0,
+    "report": "finalize-runtime.json"
+  },
+  "alignment": {
+    "source": "runs/20260505-102716-lowbit-male-pirate-w-actions-hires/attack-w/frame-aligner/20260505-210057",
+    "report": "report.md",
+    "json": "alignment.json",
+    "beforePreviewGif": "review/before-preview-8f-256x256.gif",
+    "afterPreviewGif": "review/preview-8f-256x256.gif",
+    "beforeAfterPreviewGif": "review/before-after-preview-8f-256x256.gif"
+  }
+}

@@ -60,6 +60,16 @@ The debug panel HTML is built in `src/shell/appShell.ts` (`debugControls.innerHT
 
 Settings are auto-persisted by `createSettingsStore` — every patch writes through to `localStorage`.
 
+## Syncing lobit assets
+
+Sprite assets from the [spriterrific](~/projects/spriterrific) project are synced into `public/assets/lobit/`. Run:
+
+```bash
+./scripts/sync-lobit-assets.sh
+```
+
+This uses `rsync` to mirror `~/Projects/spriterrific/public/assets/characters/lobit/` into the local `public/assets/lobit/` directory, deleting any files that no longer exist in the source.
+
 ## Conventions
 
 - TypeScript strict mode is on (`noUnusedLocals`, `noUnusedParameters`). The build will fail on unused declarations.

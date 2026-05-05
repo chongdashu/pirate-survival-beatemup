@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "id": "lobit-skeleton",
+  "label": "Lobit Skeleton",
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "defaultDirection": "w",
+  "anchors": {
+    "w": {
+      "chroma1024": "anchors/w-1024-chroma.png",
+      "native": "anchors/w-native.png",
+      "raw": "anchors/w-raw.png"
+    }
+  },
+  "animations": {
+    "idle_w": "animations/w/idle/manifest.json",
+    "attack_w": "animations/w/attack/manifest.json",
+    "hurt_w": "animations/w/hurt/manifest.json",
+    "jump_w": "animations/w/jump/manifest.json",
+    "death_w": "animations/w/death/manifest.json",
+    "walk_w": "animations/w/walk/manifest.json"
+  },
+  "notes": [
+    "W-facing run experiments exist in runs/, but are not promoted here because the skeleton turns, blurs, or detaches the held stick."
+  ]
+}

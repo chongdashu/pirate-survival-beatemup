@@ -1,0 +1,168 @@
+{
+  "version": 1,
+  "kind": "runtime-finalization",
+  "createdAt": "2026-05-05T21:06:27+01:00",
+  "animationDir": "public/assets/characters/lobit/pirate/animations/w/attack",
+  "action": "attack",
+  "direction": "w",
+  "requestedAnchorPolicy": "auto",
+  "anchorPolicy": "grounded",
+  "targetBottomY": 255,
+  "targetCenterX": 128,
+  "cellSize": [
+    256,
+    256
+  ],
+  "columns": 5,
+  "frames": 8,
+  "fps": 10,
+  "framesAdjusted": 0,
+  "maxAbsDx": 0,
+  "maxAbsDy": 0,
+  "records": [
+    {
+      "frame": "frame-01.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        70,
+        82,
+        185,
+        256
+      ],
+      "outputBBox": [
+        70,
+        82,
+        185,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-02.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        102,
+        84,
+        217,
+        256
+      ],
+      "outputBBox": [
+        102,
+        84,
+        217,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-03.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        107,
+        80,
+        227,
+        256
+      ],
+      "outputBBox": [
+        107,
+        80,
+        227,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-04.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        12,
+        95,
+        232,
+        256
+      ],
+      "outputBBox": [
+        12,
+        95,
+        232,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-05.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        105,
+        90,
+        256,
+        256
+      ],
+      "outputBBox": [
+        105,
+        90,
+        256,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-06.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        110,
+        82,
+        236,
+        256
+      ],
+      "outputBBox": [
+        110,
+        82,
+        236,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-07.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        96,
+        90,
+        205,
+        256
+      ],
+      "outputBBox": [
+        96,
+        90,
+        205,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "frame": "frame-08.png",
+      "policy": "grounded",
+      "sourceBBox": [
+        68,
+        82,
+        186,
+        256
+      ],
+      "outputBBox": [
+        68,
+        82,
+        186,
+        256
+      ],
+      "dx": 0,
+      "dy": 0
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "action": "death",
+  "direction": "w",
+  "mode": "image",
+  "spritesheet": "spritesheet.png",
+  "previewGif": "preview.gif",
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "columns": 5,
+  "rows": 2,
+  "frames": 10,
+  "fps": 8,
+  "anchor": {
+    "x": 128,
+    "y": 255
+  },
+  "sourceRun": "death-w",
+  "runtimeFinalization": {
+    "anchorPolicy": "grounded",
+    "requestedAnchorPolicy": "auto",
+    "targetBottomY": 255,
+    "targetCenterX": 128,
+    "framesAdjusted": 0,
+    "report": "finalize-runtime.json"
+  }
+}
