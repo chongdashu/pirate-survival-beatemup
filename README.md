@@ -1,6 +1,30 @@
-# vgd-phaser-starter
+# Pirate Survival Beat 'Em Up — Starter
 
-A minimal Phaser 4 + Vite + TypeScript starter with an opinionated app shell, scene flow, debug panel, and settings persistence. Drop your game logic into `SandboxScene` and grow from there.
+A Phaser 4 + Vite + TypeScript starter with pirate and skeleton character art baked in, paired with a 17-lesson tutorial that ships an entire survival brawler — fully animated waves on a moonlit ship deck, with original BGM, SFX, screen shake, hit-stop, particles, and a Fibonacci-ramped round loop.
+
+This repo is the **companion code** for the *Build a Pirate Beat 'Em Up Game in 30 mins* tutorial. Each lesson maps to one commit, so you can follow along, peek ahead, or diff against your own work at any point.
+
+> **Live demo:** https://vgd-pirate-beatemup.vercel.app
+
+## Two branches: pick where you start
+
+| Branch | What's there | When to use |
+| --- | --- | --- |
+| [`start`](../../tree/start) | Phaser starter + character spritesheets, no gameplay yet. **You are here.** | Following the tutorial from lesson 1. |
+| [`completed`](../../tree/completed) | The finished game — animated pirate, skeleton waves, health, audio, juice, polish. | Reference solution, or just play it. |
+
+```bash
+# Start the tutorial:
+git clone https://github.com/AIOriented/vgd-pirate-survival-beatemup.git
+cd vgd-pirate-survival-beatemup
+npm install
+npm run dev   # http://localhost:5173
+
+# Or skip ahead and run the finished game:
+git checkout completed
+npm install
+npm run dev
+```
 
 ## Quickstart
 
@@ -12,17 +36,40 @@ npm run typecheck
 npm test
 ```
 
-## What's in the box
+## What the starter gives you
 
-- **App shell** (`src/shell/appShell.ts`) — header with brand, Play/Editor toggle, profile (landscape/portrait) switcher, scene badge, collapsible debug panel.
-- **Scene flow** — `BootScene` → `SplashScene` → `MainMenuScene` → `SandboxScene` / `SettingsScene`.
-- **Debug panel** — Pause toggle, World-bounds overlay toggle, live pointer + keyboard input readout, scene tracker.
-- **Settings** — Volume + mute, persisted to `localStorage` under `vgd-phaser-starter-settings`.
-- **Profiles** — `landscape` (1280×720) and `portrait` (720×1280). Switch via the chip in the header or `?profile=portrait` in the URL.
-- **Reactive store** (`src/game/store.ts`) — tiny `createStore<T>` with `subscribe`/`patchState`. Used for both debug and settings.
-- **Generated UI textures** (`src/game/generatedAssets.ts`) — `ui-button`, `ui-button-active`, `ui-panel` rendered at boot via Phaser graphics. No external art required.
+- **App shell** (`src/shell/appShell.ts`) — header, Play/Editor toggle, profile (landscape/portrait) switcher, scene badge, collapsible debug panel.
+- **Scene flow** — `BootScene` → `SplashScene` → `MainMenuScene` → `SandboxScene` / `SettingsScene` (renamed to `GameScene` in lesson 14).
+- **Debug panel** — Pause toggle, world-bounds overlay, live pointer + keyboard input readout, scene tracker.
+- **Settings** — Volume + mute, persisted to `localStorage`.
+- **Profiles** — `landscape` (1280×720) and `portrait` (720×1280). Switch in the header chip or via `?profile=portrait`.
+- **Reactive store** (`src/game/store.ts`) — tiny `createStore<T>` with `subscribe`/`patchState`.
+- **Generated UI textures** (`src/game/generatedAssets.ts`) — buttons and panel rendered at boot via Phaser graphics.
+- **Pirate + skeleton sprites** under `public/assets/lobit/` — west-facing 1280×512 spritesheets at 256×256 frames, with per-animation manifests (idle, walk, attack, hurt, death, jump). You wire these up starting in lesson 5.
 
-## Architecture summary
+## Tutorial map (17 lessons, ~3.5 hours)
+
+Each lesson is one commit on the `completed` branch. Diff a single lesson with `git log start..completed --oneline` and `git show <hash>`.
+
+1. **Tour the Starter Project & Character Assets** — get oriented with the folder layout and spritesheet conventions.
+2. **Run the Starter Project** — clone, install, `npm run dev`.
+3. **Generate Stage Backgrounds With imagegen** — four pirate backdrops via parallel agent workers.
+4. **Build a Canonical Asset Index** — one `index.json` cataloguing every sprite + animation.
+5. **Integrate the Pirate Player** — animated WASD movement + Z to attack.
+6. **Add a Skeleton Enemy + Fix the Flip Bug** — chasing AI, knockback, and a root-caused facing bug.
+7. **Visualize Visual / Hit / Attack Bounds** — separate debug toggles for each box.
+8. **Gate Hits to the Active Weapon Frame** — only frame 4 deals damage.
+9. **Tune Attack Bounds to Weapon Shape** — thinner, higher hitboxes that match the art.
+10. **Add a Health System** — player HP bar with green/amber/red/blink, enemy bars overhead.
+11. **Death Animations + Game Over** — non-looping death, lingering corpses, restart screen.
+12. **Plan the Round Progression Loop** — design the survival loop before building it.
+13. **Implement the Round Loop (and Fix the Restart Bug)** — Fibonacci enemy ramp, trickle spawns, scene-restart fix.
+14. **Clean Up the HUD + Rename to GameScene** — production-ready layout and names.
+15. **Generate BGM + SFX With Agent Skills** — 4 BGM candidates + SFX, switchable in the debug panel.
+16. **Brand It: 'Deck Brawl'** — pick a name, refresh menu copy.
+17. **Polish, Juice, and an Editable World Bounds** — shadows, screen shake, hit-stop, flashes, particles.
+
+## Architecture
 
 ```
 index.html
@@ -33,6 +80,14 @@ index.html
 ```
 
 `AppContext` (`src/game/context.ts`) bundles `debugStore`, `settingsStore`, and the active profile. Every scene reaches it via `this.app` (provided by `BaseScene`).
+
+## Conventions
+
+- One scene per file in `src/scenes/`.
+- Game-engine concerns (stores, types, profiles, asset generation) live in `src/game/`.
+- Outer DOM/UI lives in `src/shell/`.
+- Tests are colocated (`*.test.ts`) and use Vitest.
+- TypeScript strict mode; `noUnusedLocals` / `noUnusedParameters` enforced — the build fails on unused declarations.
 
 ## Extending
 
@@ -60,23 +115,6 @@ The debug panel HTML is built in `src/shell/appShell.ts` (`debugControls.innerHT
 
 Settings are auto-persisted by `createSettingsStore` — every patch writes through to `localStorage`.
 
-## Syncing lobit assets
-
-Sprite assets from the [spriterrific](~/projects/spriterrific) project are synced into `public/assets/lobit/`. Run:
-
-```bash
-./scripts/sync-lobit-assets.sh
-```
-
-This uses `rsync` to mirror `~/Projects/spriterrific/public/assets/characters/lobit/` into the local `public/assets/lobit/` directory, deleting any files that no longer exist in the source.
-
-## Conventions
-
-- TypeScript strict mode is on (`noUnusedLocals`, `noUnusedParameters`). The build will fail on unused declarations.
-- Tests live next to the module they test (`*.test.ts`). Run with `npm test` or `npx vitest`.
-- All textures are generated at runtime in `BootScene`. Add real art assets via `scene.load.image(...)` in `BootScene.preload`.
-- The app-shell HTML is plain template-string DOM — no React, no framework. Add UI controls by extending the markup and querying for them.
-
 ## License
 
-MIT — see [LICENSE](LICENSE) (add one when you ship).
+MIT — do whatever you want, attribution appreciated.
