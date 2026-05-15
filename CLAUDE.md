@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Public repo state
+
+This repository is published at `git@github.com:chongdashu/pirate-survival-beatemup.git` with `main` as the public tutorial starting point. Do not document or assume a public `completed` branch; the public repo intentionally ships only the starter state.
+
 ## Commands
 
 ```bash
@@ -42,7 +46,7 @@ Both stores plus the active `GameProfile` are bundled into an `AppContext` singl
 
 ### Asset generation
 
-No external art assets shipped with the starter. `src/game/generatedAssets.ts` runs during `BootScene` and creates `ui-button`, `ui-button-active`, `ui-panel` textures via Phaser graphics. To add real assets, call `scene.load.image(...)` in `BootScene.preload`.
+`src/game/generatedAssets.ts` runs during `BootScene` and creates `ui-button`, `ui-button-active`, `ui-panel` textures via Phaser graphics. Pirate and skeleton runtime assets are included under `public/assets/lobit/` as 256x256-frame spritesheets plus manifests, but they are not wired into the starter gameplay yet. To add more assets, call `scene.load.image(...)` or the appropriate Phaser loader method in `BootScene.preload`.
 
 ## TypeScript notes
 
