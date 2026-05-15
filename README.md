@@ -1,11 +1,14 @@
 # Pirate Survival Beat 'Em Up
 
-A public Phaser 4 + Vite + TypeScript starter for the *Build a Pirate Beat 'Em Up Game in 30 mins* tutorial.
+A Phaser 4 + Vite + TypeScript starter for the *Build a Pirate Beat 'Em Up Game in 30 mins* tutorial.
 
 This repository is the tutorial starting point. It includes the app shell, scene flow, debug tooling, responsive profiles, and pirate/skeleton character asset manifests. It does **not** include a `completed` branch in the public repo.
 
-> **Public repo:** https://github.com/chongdashu/pirate-survival-beatemup
 > **Live demo:** https://vgd-pirate-beatemup.vercel.app
+
+[![VibeGameDev](https://raw.githubusercontent.com/chongdashu/vibejam-starter-pack/main/assets/vgd.png)](https://vibegamedev.com)
+
+Brought to you by [VibeGameDev.com](https://vibegamedev.com) - visit for more vibe coding game dev resources, starter projects, and agent workflows.
 
 ## Quickstart
 
